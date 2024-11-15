@@ -1,0 +1,132 @@
+.product__header {
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(230, 45, 45);
+    margin: 80px 0;
+    margin-top: 120px;
+    text-transform: uppercase;
+}
+
+.item {
+    /* height: 500px; */
+    margin-top: 13px;
+    padding: 10px 30px 20px 30px;
+    border-radius: 6px;
+    border: 1px solid #e2e2e2;
+    background-color: #ffff;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.item:hover {
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+}
+
+.item .item--top {
+    display: block;
+}
+
+.item .item--top:hover .item-img {
+    transform: translateY(-7px);
+}
+
+.item .item--top:hover .item-name {
+    color: #6aa7ec;
+}
+.item .item--top .item-label {
+    margin-bottom: 12px;
+}
+.item .item--top .item-label span{
+    font-size: 1rem;
+    display: inline-block;
+    padding: 2px;
+    background-color: rgb(234, 234, 234);
+}
+
+.item .item--top .item-img {
+    width: 100%;
+    transition: transform 0.2s linear;
+}
+
+.item .item--top .item-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.item .item--top .item-name {
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.item .item--top .item-compare {
+    display: flex;
+    gap: 6px;
+    margin: 10px 0;
+}
+
+.item .item--top .item-compare span {
+    display: block;
+    padding: 4px 10px;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    color: #666;
+    background-color: #F2F4F7;
+}
+
+.item .item--top .category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.item .item--top .category span {
+    display: block;
+    padding: 5px 7px;
+    border-radius: 8px;
+    font-size: 1.rem;
+    border: 2px solid;
+    border-color: #d6d6d6;
+}
+.item .item--top .category span.active {
+    color: #6aa7ec;
+    border-color: #6aa7ec;
+}
+
+.item .item--top .category span:hover {
+    color: #6aa7ec;
+    border-color: #6aa7ec;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.item .item--top .item-price {
+    font-size: 1.8rem;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    color: #DD2F2C;
+    display: block;
+}
+
+.item .item-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item .item-bottom  .rating {
+    font-size: 1.4rem;
+}
+
+.item .item-bottom  .rating i {
+    color: #fffb00;
+}
+
+.item .item-bottom .item-ss {
+    font-size: 1.4rem;
+    color: #6aa7ec;
+}
