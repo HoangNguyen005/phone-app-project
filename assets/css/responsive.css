@@ -5,11 +5,22 @@
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
+    #cart-container {
+        width: 80%;
+    }
 
+ 
 }
 
 /* phone */
 @media (max-width: 767px) {
+    
+
+    #header .header-top--center {
+        display: none;
+    }
+
+
     #contact .input-form {
         width: 100%;
     }
@@ -25,10 +36,25 @@
         margin: 10px auto;
     }
 
+    #cart-container {
+        width: 100%;
+    }
+
+    #cart-container .total {
+        text-align: center;
+    }
+
+    #cart-container .button {
+        /* width: 100%; */
+    }
+
   
 }
 
 /* pc */
 @media (min-width: 1024px) {
-
+    .container {
+        /* max-width: 1200px; */
+        /* padding: 30px; */
+    }
 }

@@ -9,11 +9,34 @@
 
 .item {
     /* height: 500px; */
-    margin-top: 13px;
+    margin-top: 30px;
     padding: 10px 30px 20px 30px;
     border-radius: 6px;
     border: 1px solid #e2e2e2;
     background-color: #ffff;
+    position: relative;
+}
+
+.product__item-cart {
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: none;
+}
+
+.item:hover .product__item-cart {
+    display: block;
+}
+
+.product__item-cart:active {
+    scale: 0.95;
 }
 
 .item a {
